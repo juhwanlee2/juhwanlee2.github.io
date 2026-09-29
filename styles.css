@@ -17,5 +17,6 @@ body.dark .topbar{background:#111820;border-color:var(--line)}body.dark .wordmar
 /* Research highlights follow the reference site's green light mode and cyan dark mode. */
 :root{--highlight:#008f4f}.bio .highlight,.bio a,.profile-links a{color:var(--highlight)}.bio .highlight{font-weight:500}
 body.dark{--highlight:#45c9ff}body.dark .bio .highlight{color:var(--highlight)}
+.university-link{color:var(--highlight)!important;text-decoration:none!important}.university-link:hover{color:var(--highlight)!important;text-decoration:none!important}a:hover{text-decoration:none}.publication h3 a:hover{text-decoration:none}
 
 
