@@ -14,4 +14,8 @@ body.dark{color-scheme:dark;--ink:#edf2f8;--muted:#aeb9c8;--blue:#8fb8ff;--line:
 body.dark .topbar{background:#111820;border-color:var(--line)}body.dark .wordmark{color:var(--ink)}body.dark nav a{color:var(--muted)}body.dark .bio p{color:var(--ink)}body.dark .bio strong{color:var(--ink)}body.dark .publication h3 a{color:var(--ink)}body.dark .publication h3 a:hover{color:var(--blue)}body.dark .skip{background:#1b2430;color:var(--ink)}body.dark .recognition{color:#e7bd68}body.dark .profile-photo{border-color:var(--line)}body.dark .theme-toggle{color:var(--muted)}body.dark footer{background:var(--soft);border-color:var(--line)}
 @media(max-width:600px){.nav-wrap{padding-right:120px}.theme-toggle{right:24px;top:18px}.theme-label{font-size:.72rem}}
 
+/* Research highlights follow the reference site's green light mode and cyan dark mode. */
+:root{--highlight:#008f4f}.bio .highlight,.profile-links a{color:var(--highlight)}.bio .highlight{font-weight:500}
+body.dark{--highlight:#45c9ff}body.dark .bio .highlight{color:var(--highlight)}
+
 
