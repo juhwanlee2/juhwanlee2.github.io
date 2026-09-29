@@ -30,4 +30,10 @@ body.dark{--highlight:#45c9ff}body.dark .bio .highlight{color:var(--highlight)}
 .theme-toggle{top:13px}
 @media(max-width:600px){.theme-toggle{top:14px}}
 
+/* Align the header content with the main page edges. */
+.nav-wrap{max-width:980px;padding-left:40px;padding-right:40px}
+nav{margin-left:auto;margin-right:0}
+.theme-toggle{position:static;margin-left:20px}
+@media(max-width:600px){.nav-wrap{padding-left:24px;padding-right:24px}.theme-toggle{position:absolute;right:24px;top:14px;margin-left:0}}
+
 
