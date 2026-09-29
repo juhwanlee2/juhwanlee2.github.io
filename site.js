@@ -12,3 +12,21 @@ buttons.forEach(button => button.addEventListener('click', () => {
   });
   document.getElementById('filter-status').textContent = `${count} research ${count === 1 ? 'entry' : 'entries'} shown.`;
 }));
+
+const themeToggle = document.querySelector('.theme-toggle');
+const applyTheme = (dark) => {
+  document.body.classList.toggle('dark', dark);
+  themeToggle.setAttribute('aria-pressed', String(dark));
+  themeToggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+  themeToggle.querySelector('.theme-icon').textContent = dark ? '☾' : '☼';
+  themeToggle.querySelector('.theme-label').textContent = dark ? 'Light mode' : 'Dark mode';
+};
+
+let savedTheme = null;
+try { savedTheme = localStorage.getItem('juhwan-theme'); } catch (error) { /* storage may be unavailable */ }
+applyTheme(savedTheme === 'dark');
+themeToggle.addEventListener('click', () => {
+  const dark = !document.body.classList.contains('dark');
+  applyTheme(dark);
+  try { localStorage.setItem('juhwan-theme', dark ? 'dark' : 'light'); } catch (error) { /* storage may be unavailable */ }
+});
