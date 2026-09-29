@@ -15,7 +15,7 @@ body.dark .topbar{background:#111820;border-color:var(--line)}body.dark .wordmar
 @media(max-width:600px){.nav-wrap{padding-right:120px}.theme-toggle{right:24px;top:18px}.theme-label{font-size:.72rem}}
 
 /* Research highlights follow the reference site's green light mode and cyan dark mode. */
-:root{--highlight:#008f4f}.bio .highlight,.profile-links a{color:var(--highlight)}.bio .highlight{font-weight:500}
+:root{--highlight:#008f4f}.bio .highlight,.bio a,.profile-links a{color:var(--highlight)}.bio .highlight{font-weight:500}
 body.dark{--highlight:#45c9ff}body.dark .bio .highlight{color:var(--highlight)}
 
 
