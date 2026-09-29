@@ -22,5 +22,6 @@ body.dark{--highlight:#45c9ff}body.dark .bio .highlight{color:var(--highlight)}
 @media(max-width:600px){.nav-wrap{padding-right:24px}.theme-toggle{position:absolute;right:24px;top:18px;margin-left:0}}
 .theme-toggle{margin-left:auto}.theme-label{display:none}
 .nav-wrap{max-width:1120px}
+.nav-wrap{max-width:none;width:100%}.theme-toggle{position:absolute;right:24px;top:17px;margin-left:0}
 
 
