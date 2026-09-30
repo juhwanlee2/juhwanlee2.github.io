@@ -46,7 +46,7 @@ nav{margin-left:auto;margin-right:0}
 .project-with-visual{display:grid;grid-template-columns:200px minmax(0,1fr);gap:26px;align-items:start}.project-with-visual .project-visual{margin:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#fff}.project-visual img{display:block;width:100%;height:145px;object-fit:fill}
 @media(max-width:600px){.publication{grid-template-columns:110px minmax(0,1fr);gap:15px}.paper-visual img{height:100px}.paper-visual figcaption{font-size:.6rem}.award-amount{margin-left:0;display:block}}
 @media(max-width:600px){.project-with-visual{grid-template-columns:110px minmax(0,1fr);gap:15px}.project-visual img{height:100px}}
-@media(max-width:420px){.publication{grid-template-columns:1fr}.paper-side{max-width:200px}.paper-visual img{height:125px}}
+@media(max-width:420px){.publication,.project-with-visual{grid-template-columns:1fr}.paper-side,.project-visual{max-width:200px}.paper-visual img,.project-visual img{height:125px}}
 
 .publication:first-of-type{padding-top:24px}.project p.project-client{color:var(--blue);font-size:.78rem}.paper-visual figcaption a{color:var(--muted)}
 
