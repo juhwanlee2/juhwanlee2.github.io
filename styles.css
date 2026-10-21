@@ -124,3 +124,8 @@ footer .footer-inner{max-width:1180px}
 body.dark .content-column .bio p{color:var(--ink)}
 @media(max-width:800px){.site-layout{grid-template-columns:220px minmax(0,1fr);gap:34px;padding:30px 28px 0}.profile-sidebar .profile-photo{width:136px;height:136px}}
 @media(max-width:650px){.site-layout{display:block;padding:26px 24px 0}.profile-sidebar{position:static;border-bottom:1px solid var(--line);padding:0 0 22px;margin-bottom:25px}.profile-sidebar .profile-photo{width:112px;height:112px;margin-bottom:14px}.profile-sidebar .affiliation{margin-bottom:13px}.profile-sidebar .profile-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px}.content-column .intro{padding-bottom:22px}.content-column .section{padding-bottom:24px}.content-column .skills{grid-template-columns:1fr;gap:2px}.content-column .skills dd{margin:0 0 10px}}
+
+/* Keep each simulation tool on its own unbroken line. */
+.simulation-tool{display:block;white-space:nowrap}
+@media(min-width:651px) and (max-width:1000px){.content-column .skills{grid-template-columns:1fr;gap:3px}.content-column .skills dd{margin-bottom:10px}}
+@media(max-width:650px){.simulation-tool{font-size:clamp(.75rem,3.5vw,1rem)}}
