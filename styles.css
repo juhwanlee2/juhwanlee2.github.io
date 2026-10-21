@@ -79,3 +79,17 @@ nav a{font-size:1rem}
 
 /* Research and project entries are text-only. */
 .publication{display:block}
+
+/* Icon-led profile links, matching the compact reference list. */
+.profile-links{display:grid;gap:12px;width:max-content;max-width:100%}
+.profile-links .profile-link{display:grid;grid-template-columns:22px minmax(0,1fr);align-items:center;gap:12px;color:var(--ink);font-size:1rem;line-height:24px;text-decoration:none}
+.profile-link svg{display:block;width:20px;height:20px;overflow:visible}
+.profile-link:hover span{text-decoration:underline;text-underline-offset:4px}
+.profile-links .profile-link-email,.profile-links .profile-link-cv{color:var(--muted)}
+.profile-link-email svg,.profile-link-cv svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.profile-link-scholar svg{fill:#4285f4}
+.profile-link-scholar .scholar-medallion{fill:#2b6fd6}
+.profile-link-linkedin svg{fill:#0a66c2}
+.profile-link-github svg{fill:currentColor}
+body.dark .profile-links .profile-link{color:var(--ink)}
+body.dark .profile-links .profile-link-email,body.dark .profile-links .profile-link-cv{color:var(--muted)}
