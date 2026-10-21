@@ -93,3 +93,34 @@ nav a{font-size:1rem}
 .profile-link-github svg{fill:currentColor}
 body.dark .profile-links .profile-link{color:var(--ink)}
 body.dark .profile-links .profile-link-email,body.dark .profile-links .profile-link-cv{color:var(--muted)}
+/* Academic profile layout inspired by the reference site. */
+.site-layout{max-width:1180px;margin:0 auto;padding:38px 40px 0;display:grid;grid-template-columns:260px minmax(0,1fr);gap:52px;align-items:start}
+.page{max-width:none;padding:0}
+.profile-sidebar{position:sticky;top:88px;padding:4px 0 30px}
+.profile-sidebar .profile-photo{width:158px;height:158px;margin:0 0 20px;object-position:center;border-radius:50%}
+.profile-sidebar h1{font-family:var(--sans);font-size:1.38rem;line-height:1.3;letter-spacing:-.02em;font-weight:650;margin:0 0 4px}
+.profile-role{font-size:.92rem;color:var(--muted);margin:0 0 3px}
+.profile-sidebar .affiliation{font-size:.92rem;line-height:1.55;margin:0 0 22px}
+.profile-sidebar .profile-links{display:flex;flex-direction:column;align-items:flex-start;gap:11px;margin:0}
+.profile-sidebar .profile-link{font-size:.91rem!important;gap:10px!important}
+.profile-sidebar .profile-link svg{width:17px;height:17px}
+.content-column{min-width:0}
+.content-column .intro{display:block;padding:0 0 26px}
+.content-column .section{padding:0 0 30px;border:0}
+.content-column .section>h2{font-weight:650;border-bottom:1px solid var(--line);padding:0 0 8px;margin:0 0 17px}
+.content-column .bio p{font-size:.96rem;line-height:1.62;color:var(--ink);margin-bottom:12px}
+.content-column .bio .research-keywords{margin-top:14px}
+.content-column .section-description{margin:0 0 12px}
+.content-column .filters{margin:10px 0 2px}
+.content-column .publication{padding:20px 0}
+.content-column .projects-grid{gap:0}
+.content-column .project{padding:17px 0;border-bottom:1px solid var(--line)}
+.content-column .project:first-child{padding-top:0}
+.content-column .project:last-child{padding-bottom:0;border:0}
+.content-column .award-list li{margin-bottom:13px}
+.content-column .skills{grid-template-columns:130px 1fr}
+.content-column .contact{margin-top:0}
+footer .footer-inner{max-width:1180px}
+body.dark .content-column .bio p{color:var(--ink)}
+@media(max-width:800px){.site-layout{grid-template-columns:220px minmax(0,1fr);gap:34px;padding:30px 28px 0}.profile-sidebar .profile-photo{width:136px;height:136px}}
+@media(max-width:650px){.site-layout{display:block;padding:26px 24px 0}.profile-sidebar{position:static;border-bottom:1px solid var(--line);padding:0 0 22px;margin-bottom:25px}.profile-sidebar .profile-photo{width:112px;height:112px;margin-bottom:14px}.profile-sidebar .affiliation{margin-bottom:13px}.profile-sidebar .profile-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px}.content-column .intro{padding-bottom:22px}.content-column .section{padding-bottom:24px}.content-column .skills{grid-template-columns:1fr;gap:2px}.content-column .skills dd{margin:0 0 10px}}
