@@ -81,8 +81,8 @@ nav a{font-size:1rem}
 .publication{display:block}
 
 /* Icon-led profile links, matching the compact reference list. */
-.profile-links{display:grid;gap:12px;width:max-content;max-width:100%}
-.profile-links .profile-link{display:grid;grid-template-columns:22px minmax(0,1fr);align-items:center;gap:12px;color:var(--ink);font-size:1rem;line-height:24px;text-decoration:none}
+.profile-links{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;width:auto;max-width:100%}
+.profile-links .profile-link{display:inline-flex;align-items:center;gap:10px;flex:0 0 auto;color:var(--ink);font-size:1rem;line-height:24px;text-decoration:none}
 .profile-link svg{display:block;width:20px;height:20px;overflow:visible}
 .profile-link:hover span{text-decoration:underline;text-underline-offset:4px}
 .profile-links .profile-link-email,.profile-links .profile-link-cv{color:var(--muted)}
